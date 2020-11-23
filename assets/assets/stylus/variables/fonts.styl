@@ -1,0 +1,152 @@
+//
+// fonts
+//
+
+// @depreceted:start
+// Use Main Font Gilroy
+@font-face
+  font-family 'gilroyregular'
+  src url('~@/static/fonts/gilroy-regular.woff2') format('woff2'), url('~@/static/fonts/gilroy-regular.woff') format('woff')
+  font-weight normal
+  font-style normal
+  font-display swap
+
+@font-face
+  font-family 'gilroy-semibold'
+  src url('~@/static/fonts/gilroy-semibold.woff2') format('woff2'), url('~@/static/fonts/gilroy-semibold.woff') format('woff')
+  font-weight 600
+  font-style normal
+  font-display swap
+
+@font-face
+  font-family 'gilroy-bold'
+  src url('~@/static/fonts/gilroy-bold.woff2') format('woff2'), url('~@/static/fonts/gilroy-bold.woff') format('woff')
+  font-weight bold
+  font-style normal
+  font-display swap
+// @depreceted:end
+
+
+//
+// Main Font Gilroy
+// Combining every font styles
+//
+@font-face
+  font-family 'gilroy'
+  src url('~@/static/fonts/gilroy-regular.woff2') format('woff2'), url('~@/static/fonts/gilroy-regular.woff') format('woff')
+  font-weight normal
+  font-style normal
+  font-display swap
+
+@font-face
+  font-family 'gilroy'
+  src url('~@/static/fonts/gilroy-medium.woff2') format('woff2'), url('~@/static/fonts/gilroy-medium.woff') format('woff')
+  font-weight 500
+  font-style normal
+  font-display swap
+
+@font-face
+  font-family 'gilroy'
+  src url('~@/static/fonts/gilroy-bold.woff2') format('woff2'), url('~@/static/fonts/gilroy-bold.woff') format('woff')
+  font-weight bold
+  font-style normal
+  font-display swap
+
+font-gilroy()
+  font-family 'gilroy'
+.font-gilroy
+  font-gilroy()
+
+font-opensans()
+  font-family 'Open Sans', sans-serif
+.font-opensans()
+  font-opensans()
+
+font-montserrat()
+  font-family 'Montserrat', sans-serif
+.font-montserrat
+  font-montserrat()
+
+font-playfairdisplay()
+  font-family 'Playfair Display', serif
+.font-playfairdisplay
+  font-playfairdisplay()
+
+font-merriweather()
+  font-family 'Merriweather', serif
+.font-merriweather
+  font-merriweather()
+
+font-pacifico()
+  font-family 'Pacifico', cursive
+.font-pacifico
+  font-pacifico()
+
+font-amaticsc()
+  font-family 'Amatic SC', cursive
+.font-amaticsc
+  font-amaticsc()
+
+font-caveat()
+  font-family 'Caveat', cursive
+.font-caveat
+  font-caveat()
+  font-size 20px
+
+//
+// base typos
+//
+font-primary()
+  font-family 'gilroyregular', 'Arial', sans-serif
+  font-weight 400
+  letter-spacing 0
+
+typoBase()
+  font-size 16px
+
+typoText()
+  color $colorBase2
+  font-size 16px
+
+typoBaseBig()
+  font-size 18px
+
+typoSubTitle()
+  color $colorBase2
+  font-size 18px
+
+typoTitle()
+  color $colorBase2
+  font-size 22px
+
+typoDesc()
+  color $colorBase3
+  font-size 14px
+
+typoDescGray()
+  color $colorBase4
+  font-size 14px
+
+//
+// icons
+//
+$icon-md = 22px
+
+//
+// font sizes
+//
+$font-sm = 14px
+$font-md = 16px
+$font-lg = 20px
+$font-xl = 26px
+$font-xlp = 38px
+$font-exl = 52px
+
+//
+// aligns
+//
+.ta_center
+  text-align center
+
+.color_critic
+  color $colorCritic1

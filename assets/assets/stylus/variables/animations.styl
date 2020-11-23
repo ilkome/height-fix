@@ -1,0 +1,126 @@
+$transition-time = 350ms
+$transition-style = cubic-bezier(.17, .04, .03, 1)
+
+anim($time = $transition-time, $style = $transition-style)
+  transition $time $style
+
+anim-none()
+  transition none
+
+button-anim()
+  transition  color .15s ease-in-out,
+              background .15s ease-in-out,
+              border-color .15s ease-in-out,
+              opacity .15s ease-in-out,
+              box-shadow .15s ease-in-out
+
+//
+// page transition
+//
+.pageTransition
+  full-page()
+    position absolute
+    top 0
+    left 0
+    width 100%
+    background $colorFaint5
+
+  &-leave-to
+  &-leave-active
+    full-page()
+
+  &-enter-active
+  &-leave-active
+    opacity 1
+    transition opacity 300ms ease, transform 600ms $transition-style
+
+  &-enter
+  &-leave-to
+    opacity 0
+    transform translateY(10px)
+
+//
+// slide from bottom
+//
+.slideFromBottom
+  &-enter-active
+  &-leave-active
+    opacity 1
+    transition opacity 250ms ease, transform 300ms $transition-style
+
+  &-enter
+  &-leave-to
+    opacity 0
+    transform translateY(50px)
+
+//
+// BaseModal anim
+//
+.baseModalAnim
+  &-enter-active
+  &-leave-active
+    opacity 0
+    transform translate3d(0, 50px, 0)
+    transition opacity 300ms $transition-style, transform 250ms $transition-style
+
+  &-enter-to
+    opacity 1
+    transform translate3d(0, 0, 0)
+
+  &-leave
+    opacity 1
+
+  &-leave-to
+    opacity 1
+    transform translate3d(0, 100%, 0)
+    transition opacity 400ms $transition-style, transform 400ms $transition-style
+
+
+//
+// slide from top
+//
+.slideFromTop
+  &-enter-active
+  &-leave-active
+    opacity 1
+    transition opacity 250ms ease, transform 300ms $transition-style
+
+  &-enter
+  &-leave-to
+    opacity 0
+    transform translateY(-50px)
+
+//
+// base modal
+//
+.animModalOverflow
+  &-enter-active
+  &-leave-active
+    transition all 250ms $transition-style
+
+  &-enter
+  &-leave-to
+    opacity 0
+
+.animOpacity
+  &-enter-active
+  &-leave-active
+    transition all 500ms $transition-style
+
+  &-enter
+  &-leave-to
+    opacity 0
+
+//
+// drag hand
+//
+.animDragHand
+  &-enter-active
+  &-leave-active
+    opacity 1
+    transition opacity 300ms ease, transform 600ms $transition-style
+
+  &-enter
+  &-leave-to
+    opacity 0
+    transform translateX(10px)
